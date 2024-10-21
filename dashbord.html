@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #101820;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #101820;
+}
+
+.sidebar h2 {
+    color: white;
+    font-size: 1.8rem;
+    border-left: 4px solid white;
+    padding-left: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 1;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #2ec4b6;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.grid-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 2rem;
+    color: white;
+}
+
+.plus {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: #2ec4b6;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.plus:hover {
+    background-color: #ffbf69;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Startup Name</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="icon">📅</div>
+                <h3>Team Updates</h3>
+                <div class="plus">+</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">📘</div>
+                <h3>Employee Handbook</h3>
+                <div class="plus">+</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">📊</div>
+                <h3>Project Reports</h3>
+                <div class="plus">+</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">👤</div>
+                <h3>Hiring</h3>
+                <div class="plus">+</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">📈</div>
+                <h3>Annual Report</h3>
+                <div class="plus">+</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">💡</div>
+                <h3>New Products</h3>
+                <div class="plus">+</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">💚</div>
+                <h3>Company Culture</h3>
+                <div class="plus">+</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

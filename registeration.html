@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Startup Showcase Registration Form</title>
+    
+
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <h1>Startup Showcase Registration Form</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+
+            <h2>Personal Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="year">Year of Study:</label>
+            <input type="text" id="year" name="year" required>
+
+            <label for="college">College/University Name:</label>
+            <input type="text" id="college" name="college" required>
+
+            <h2>Startup Details</h2>
+            <label for="startup-name">Startup Name:</label>
+            <input type="text" id="startup-name" name="startup-name" required>
+
+            <label for="website">Website (if any):</label>
+            <input type="url" id="website" name="website">
+
+            <label for="industry">Industry/Field:</label>
+            <input type="text" id="industry" name="industry" required>
+
+            <label for="description">Brief Description of Your Startup:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <h2>Startup Showcase Video</h2>
+            <label for="video">Upload Your Startup Showcase Video (max 100MB):</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
+
+            <h2>Team Information</h2>
+            <label>Are you participating as an individual or a team?</label>
+            <select id="team" name="team" required>
+                <option value="Individual">Individual</option>
+                <option value="Team">Team</option>
+            </select>
+
+            <label for="members">If team, how many members?</label>
+            <input type="number" id="members" name="members" min="1">
+
+            <label for="team-names">Names of team members (if applicable):</label>
+            <textarea id="team-names" name="team-names" rows="3"></textarea>
+
+            <h2>Startup Stage</h2>
+            <label for="stage">What stage is your startup currently in?</label>
+            <select id="stage" name="stage" required>
+                <option value="Idea">Idea/Concept Stage</option>
+                <option value="MVP">MVP (Minimum Viable Product)</option>
+                <option value="Growth">Early Growth</option>
+                <option value="Scaling">Scaling</option>
+            </select>
+
+            <label>Have you received any funding for your startup?</label>
+            <div>
+                <input type="radio" id="funding-yes" name="funding" value="Yes">
+                <label for="funding-yes">Yes</label>
+                <input type="radio" id="funding-no" name="funding" value="No">
+                <label for="funding-no">No</label>
+            </div>
+
+            <label for="funding-amount">If yes, please mention the funding amount and type:</label>
+            <input type="text" id="funding-amount" name="funding-amount">
+
+            <h2>Event Specific Information</h2>
+            <label for="goals">What are your goals for participating in this event?</label>
+            <textarea id="goals" name="goals" rows="4"></textarea>
+
+            <label>Are you interested in pitching your startup during the event?</label>
+            <div>
+                <input type="radio" id="pitch-yes" name="pitch" value="Yes">
+                <label for="pitch-yes">Yes</label>
+                <input type="radio" id="pitch-no" name="pitch" value="No">
+                <label for="pitch-no">No</label>
+            </div>
+
+            <label for="assistance">Do you need any special assistance during the event?</label>
+            <textarea id="assistance" name="assistance" rows="3"></textarea>
+
+            <h2>Agreement</h2>
+            <p>By submitting this form, you agree to the event’s terms and conditions and consent to any media coverage during the event.</p>
+            <label for="signature">Signature:</label>
+            <input type="text" id="signature" name="signature" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
